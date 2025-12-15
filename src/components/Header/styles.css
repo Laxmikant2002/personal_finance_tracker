@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 3rem;
+    height: 88px;
+    background: linear-gradient(90deg, #4169e1 0%, #5b7ef0 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-name-header {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.logout-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+}

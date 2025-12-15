@@ -1,0 +1,202 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #f5f6fa;
+}
+
+.dashboard-content {
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-main-full {
+  width: 100%;
+}
+
+.welcome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.welcome-header h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.user-name {
+  color: #4169e1;
+  font-weight: 600;
+}
+
+.add-transaction-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #4169e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.add-transaction-btn:hover {
+  background: #3152c6;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.balance-card {
+  background: linear-gradient(135deg, #5b8def 0%, #4169e1 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 4px 20px rgba(65, 105, 225, 0.3);
+}
+
+.card-label {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 0.75rem;
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.card-details, .card-info {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.stat-amount {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.stat-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stat-description {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.stat-change {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+}
+
+.stat-change.positive {
+  color: #10b981;
+  background: #d1fae5;
+}
+
+.stat-change.negative {
+  color: #ef4444;
+  background: #fee2e2;
+}
+
+.chart-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-content {
+    padding: 1rem;
+  }
+
+  .welcome-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-transaction-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .balance-amount {
+    font-size: 2rem;
+  }
+
+  .stat-amount {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-content {
+    padding: 0.75rem;
+  }
+
+  .welcome-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .balance-card,
+  .stat-card {
+    padding: 1.25rem;
+  }
+}

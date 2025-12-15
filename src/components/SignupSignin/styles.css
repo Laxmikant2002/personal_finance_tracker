@@ -1,0 +1,116 @@
+.signup-signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 88px);
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.signup-signin-card {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.signup-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.brand-name {
+    color: #4169e1;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-input {
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1.5px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s;
+    background: transparent;
+    color: #333;
+}
+
+.form-input::placeholder {
+    color: #999;
+}
+
+.form-input:focus {
+    border-bottom-color: #4169e1;
+}
+
+.btn-primary {
+    margin-top: 1rem;
+    padding: 0.875rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4169e1;
+    background: white;
+    border: 2px solid #4169e1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #f0f4ff;
+}
+
+.divider {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.btn-google {
+    padding: 0.875rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background: #4169e1;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-google:hover {
+    background: #3152c6;
+}
+
+@media (prefers-color-scheme: light) {
+    .signup-signin-container {
+        background-color: #f5f5f5;
+    }
+
+    .form-input {
+        color: #333;
+    }
+}

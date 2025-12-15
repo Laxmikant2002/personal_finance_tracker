@@ -1,0 +1,27 @@
+.finance-chart-container,
+.expense-chart-container {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.chart-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.empty-chart {
+  text-align: center;
+  padding: 3rem;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .finance-chart-container,
+  .expense-chart-container {
+    padding: 1rem;
+  }
+}
